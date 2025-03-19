@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Curriculo Vitae</h1>
-    <h2>Fellipe Mendes</h2>
-</body>
+<html>
+    <body>
+        <form action="http://www.google.com.br/search" method="get"> <!-- estudar metodo get, post.. -->
+            <fieldset> <!-- agrupar varios campos em caixa -->
+                <legend>busca</legend> <!-- titulo da pesquisa -->
+            <abbr>*</abbr><label>Termo de busca:</label> <!-- abbr é campo obrigatório -->
+            <input type="text" name="q" id="termo_busca" required placeholder="Digite algo"> <!-- estudar id, deixa salvo. -->
+            </fieldset>
+            <fieldset>
+                <legend>Opções de busca</legend>
+                <div>
+                <label for="campo_resenha">Resenha:</label>
+                <textarea name="resenha" rows="5" cols="60" placeholder="Resenha da busca"></textarea>
+            </div>
+                <div>
+                    <label form="campo_horario">Horario de busca</label>
+                    <select name="tbs" id="campo_horario">
+                        <option value="">qualquer horario</option>
+                        <option value="qdr:h">ultima hora</option>
+                        <option value="qdr:d">ultimo dia</option>
+                        <option value="qdr:w">ultima semana</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="campo_data"> Data consulta</label>
+                    <input type="date" name="date" id="campo_data">
+                </div>
+                <div>
+                    <label for="campo_qtd">quantidade resultados:</label>
+                    <input type="number" name="qtd" id="campo_qtd" min="10" max="50" step="10">
+                </div>
+                <div>
+                    <label for="campo_cpf">CPF:</label>
+                    <input type="text" name="cpf" id="campo_cpf" pattern="\d{3}.\d{3}.\d{3}\-d{2}">
+                </div>
+            </fieldset>
+            <button type="submit" formaction="http://www.google.com.br/search">pesquisar google</button>
+            <button type="submit" formaction="http://www.bing.com.br/search">pesquisar bing</button>
+        </form>
+    </body>
 </html>
