@@ -1,42 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <form action="http://www.google.com.br/search" method="get"> <!-- estudar metodo get, post.. -->
-            <fieldset> <!-- agrupar varios campos em caixa -->
-                <legend>busca</legend> <!-- titulo da pesquisa -->
-            <abbr>*</abbr><label>Termo de busca:</label> <!-- abbr é campo obrigatório -->
-            <input type="text" name="q" id="termo_busca" required placeholder="Digite algo"> <!-- estudar id, deixa salvo. -->
-            </fieldset>
-            <fieldset>
-                <legend>Opções de busca</legend>
-                <div>
-                <label for="campo_resenha">Resenha:</label>
-                <textarea name="resenha" rows="5" cols="60" placeholder="Resenha da busca"></textarea>
-            </div>
-                <div>
-                    <label form="campo_horario">Horario de busca</label>
-                    <select name="tbs" id="campo_horario">
-                        <option value="">qualquer horario</option>
-                        <option value="qdr:h">ultima hora</option>
-                        <option value="qdr:d">ultimo dia</option>
-                        <option value="qdr:w">ultima semana</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="campo_data"> Data consulta</label>
-                    <input type="date" name="date" id="campo_data">
-                </div>
-                <div>
-                    <label for="campo_qtd">quantidade resultados:</label>
-                    <input type="number" name="qtd" id="campo_qtd" min="10" max="50" step="10">
-                </div>
-                <div>
-                    <label for="campo_cpf">CPF:</label>
-                    <input type="text" name="cpf" id="campo_cpf" pattern="\d{3}.\d{3}.\d{3}\-d{2}">
-                </div>
-            </fieldset>
-            <button type="submit" formaction="http://www.google.com.br/search">pesquisar google</button>
-            <button type="submit" formaction="http://www.bing.com.br/search">pesquisar bing</button>
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Page Not found</h1>
+    <div class="Logo2">
+        <a href="https://https://cdn-icons-png.flaticon.com/512/3593/3593455.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/3593/3593455.png"
+            alt="Nuvem"
+            width="50">
+        </a>
+
+    </div>
+    <header>
+        <div class="Logo">
+            <a href="https://media.tenor.com/ZF2szXXbZM4AAAAm/mike-wazowski-meme.webp">
+                <img src="https://media.tenor.com/ZF2szXXbZM4AAAAm/mike-wazowski-meme.webp"
+                alt="page not found"
+                width="150">
+            </a>
+        </div>
+
+        <ul>
+            <div class="Botao">
+            <h1><a href="index.html">Refresh Page</a></h1>
+        </ul>
+    </div>
+
+    </header>
+</body>
 </html>

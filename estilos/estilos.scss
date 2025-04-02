@@ -1,0 +1,36 @@
+@import 'reset';
+
+$font-stack: Helvetica, Arial;
+$primary-color: #333;
+
+%message-shared {
+  text-decoration: double;
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #7cb5ed;
+}
+
+}
+body {
+  @extend %message-shared;
+  background-color: #98c3fb;
+  text-align: center;
+
+}
+
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2d714f;
+  color: #333;
+  font-style: inherit;
+  text-decoration: none;
+
+}
+
+@debug $font-stack;
